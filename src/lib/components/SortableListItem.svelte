@@ -245,7 +245,7 @@ Serves as an individual item within `<SortableList.Root>`. Holds the data and co
 <li
 	bind:this={itemRef}
 	{id}
-	class="ssl-item"
+	class="ssl-item {$$props.class ?? ''}"
 	style:cursor={styleCursor}
 	style:width={styleWidth}
 	style:height={styleHeight}

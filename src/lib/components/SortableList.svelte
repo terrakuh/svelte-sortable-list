@@ -596,7 +596,7 @@
 <!-- svelte-ignore a11y-role-supports-aria-props -->
 <ul
 	bind:this={rootRef}
-	class="ssl-list"
+	class="ssl-list {$$props.class ?? ''}"
 	style:--ssl-gap="{gap}px"
 	style:--ssl-wrap={hasWrapping ? 'wrap' : 'nowrap'}
 	style:--ssl-transition-duration="{transitionDuration}ms"
